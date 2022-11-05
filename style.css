@@ -1,0 +1,235 @@
+body {
+    background-color: #eeeeee;
+    font-family: sans-serif;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    position: fixed;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  .logo img {
+    border-radius: 10%;
+  }
+  
+   #nav-bar {
+     min-height: 80px;
+     align-items: center;
+     display: flex;
+     flex-grow: 1;
+   }
+  
+   #nav-bar ul {
+   padding: 0;
+   text-align: center;
+   }
+  
+   #nav-bar ul li {
+   display: block;
+   margin-bottom: 20px;
+   }
+  
+   #nav-bar ul li a {
+     color: #000000;
+     text-decoration: none;
+     font-size: 20px;
+   }
+  
+   .form {
+     max-width: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-top: 250px;
+     align-items: center;
+   }
+  
+   .form form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 430px;
+     width: 100%;
+   }
+  
+   .form form input {
+    display: block;
+   }
+  
+   .form form input:first-child {
+     margin-bottom: 20px;
+     max-width: 300px;
+     padding: 5px;
+     width: 100%;
+     background-color: #ffffff;
+   }
+  
+  .form form input:last-child {
+   margin-bottom: 20px;
+   background-color: #f1c40f;
+   padding: 4px 20px;
+   font-weight: bold;
+   font-size: 18px;
+   border: none;
+   border-radius: 4px;
+  
+  }
+  
+  #features {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  
+  }
+  
+  #features .card {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  #features .card .icon {
+    display: none;
+    color: #ff8c00;
+    max-width: 100px;
+    width: 100%;
+  }
+  
+  #features .card .content {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  #how-it-works {
+    max-width: 100%;
+    margin: 50px auto;
+  }
+  
+  #pricing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #pricing .card {
+   margin: 0 auto;
+   margin-bottom: 15px;
+   border: 1px solid #000;
+   max-width: 340px;
+   width: 100%;
+   border-radius: 4px;
+   text-align: center;
+  }
+  
+  #pricing .card h2 {
+  background-color: #dddddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppearcase;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 15px;
+  
+  }
+  
+  #pricing .card strong {
+    font-size: 24px;
+  }
+  
+  #pricing .card button {
+    margin: 15px 0;
+    background-color: #f1c40f;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 24px;
+  }
+  
+  footer {
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #ddd;
+    text-align: center;
+  }
+  
+  footer > ul {
+    padding: 0;
+  }
+  
+  footer >ul li {
+    display: inline;
+  }
+  
+  footer >ul li:not(last-child) {
+    margin-right: 10px;
+  }
+  
+  footer >ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  @media (min-width: 550px) {
+    #features .card .icon {
+      display: block;
+  
+    }
+    #features .card .content {
+      text-align: left;
+    }
+  }
+  
+  @media(min-width: 600px) {
+    #header {
+    flex-direction: row;
+    left: 5%;
+    right: 5%;
+    }
+    #nav-bar ul {
+      width: 100%;
+      justify-content: flex-end;
+      display: flex;
+    }
+    #nav-bar ul li {
+      display: inline;
+      margin-right: 50px;
+    }
+  #nav-bar ul li:last-cild {
+    margin-right: 0;
+  }
+  }
+  
+  @media(min-width: 800px) {
+    #pricing {
+      flex-direction: row;
+      text-align: center;
+    }
+    #pricing .card:not(last-child){
+      margin-right: 15px;
+    }
+  }
+  
+  
